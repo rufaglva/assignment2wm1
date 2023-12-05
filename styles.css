@@ -1,6 +1,6 @@
 body {
-  font-family: 'Arial', sans-serif;
-  background-color: #1e272e; 
+  font-family: 'Times New Roman', Times, serif;
+  background-color: #1e2e1e; 
   color: #ecf0f1; 
   margin: 0;
   padding: 0;
@@ -11,7 +11,7 @@ h1 {
   color: #fff;
   padding: 20px;
   text-align: center;
-  border-bottom: 4px solid #218c74; 
+  border-bottom: 4px solid #074034; 
 }
 
 #searchInput,
@@ -19,7 +19,7 @@ h1 {
   margin: 10px;
   padding: 12px;
   width: 350px;
-  border: 2px solid #2c3e50;
+  border: 2px solid #233c2a;
   border-radius: 8px;
   color: #000000; 
 }
@@ -37,18 +37,19 @@ h1 {
 }
 
 .product-item {
-  background-color: #182d43; /* Darker Grayish Background */
-  border: 1px solid #4b6b8b;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #184321; 
+  border: 1px solid #52815c;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
   margin: 15px;
   padding: 20px;
   width: 300px;
   border-radius: 15px;
-  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; 
 }
 
 .product-item:hover {
-  transform: scale(1.05);
+  transform: scale(1.04); 
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); 
 }
 
 #productDetail {
@@ -61,17 +62,18 @@ h1 {
 }
 
 .view-details {
-  background-color: #156252; /* Dark Teal Green */
+  background-color: #156252; 
   color: #fff;
   border: none;
   padding: 12px 20px;
   cursor: pointer;
   border-radius: 25px;
-  transition: background-color 0.3s ease-in-out;
-}
+  transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); }
 
 .view-details:hover {
-  background-color: #279555; /* Darker Green on Hover */
+  background-color: #279555; 
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); 
 }
 
 .product-item img {

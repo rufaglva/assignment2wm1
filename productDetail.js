@@ -14,7 +14,6 @@ document.addEventListener("DOMContentLoaded", () => {
       })
       .then(product => {
           if (product) {
-              // Display product details
               const productDiv = document.createElement('div');
               productDiv.innerHTML = `
                   <h2>${product.title || 'Product Name Unavailable'}</h2>
@@ -23,7 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
               `;
               productDetail.appendChild(productDiv);
 
-              // Display image gallery
+              
               if (product.images && product.images.length > 0) {
                   product.images.forEach(imageUrl => {
                       const imageElement = document.createElement('img');
@@ -31,11 +30,11 @@ document.addEventListener("DOMContentLoaded", () => {
                       imageGallery.appendChild(imageElement);
                   });
               } else {
-                  imageGallery.innerHTML = '<p>No images available.</p>';
+                  imageGallery.innerHTML = '<p>No images available,sorry.</p>';
               }
           } else {
               console.error('Product data not found');
-              productDetail.innerHTML = '<p>Product details not available.</p>';
+              productDetail.innerHTML = '<p>Product details are not available.</p>';
           }
       })
       .catch(error => {
