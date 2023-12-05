@@ -14,8 +14,8 @@ h1 {
   border-bottom: 4px solid #074034; 
 }
 
-#searchInput,
-#categoryFilter {
+#search,
+#categoryfltr {
   margin: 10px;
   padding: 12px;
   width: 350px;
@@ -24,8 +24,8 @@ h1 {
   color: #000000; 
 }
 
-#searchInput::placeholder,
-#categoryFilter::placeholder {
+#search::placeholder,
+#categoryfltr::placeholder {
   color: #aaa;
 }
 
@@ -91,8 +91,8 @@ h1 {
     width: 100%;
   }
 
-  #searchInput,
-  #categoryFilter {
+  #search,
+  #categoryfltr {
     width: 100%;
     order: 2; 
   }

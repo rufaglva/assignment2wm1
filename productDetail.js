@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
   const productDetail = document.getElementById('productDetail');
-  const imageGallery = document.getElementById('imageGallery');
+  const Gallery = document.getElementById('Gallery');
 
   const urlParams = new URLSearchParams(window.location.search);
   const productId = urlParams.get('id');
@@ -27,10 +27,10 @@ document.addEventListener("DOMContentLoaded", () => {
                   product.images.forEach(imageUrl => {
                       const imageElement = document.createElement('img');
                       imageElement.src = imageUrl;
-                      imageGallery.appendChild(imageElement);
+                      Gallery.appendChild(imageElement);
                   });
               } else {
-                  imageGallery.innerHTML = '<p>No images available,sorry.</p>';
+                  Gallery.innerHTML = '<p>No images available,sorry.</p>';
               }
           } else {
               console.error('Product data not found');

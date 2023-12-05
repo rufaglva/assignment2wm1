@@ -1,13 +1,13 @@
 document.addEventListener("DOMContentLoaded", () => {
   const productList = document.getElementById('productList');
-  const searchInput = document.getElementById('searchInput');
-  const categoryFilter = document.getElementById('categoryFilter');
+  const search = document.getElementById('search');
+  const categoryfltr = document.getElementById('categoryfltr');
 
   let productsData = []; 
 
   const renderProducts = () => {
-    const searchTerm = searchInput.value.toLowerCase().trim();
-    const selectedCategory = categoryFilter.value.toLowerCase().trim();
+    const searchTerm = search.value.toLowerCase().trim();
+    const selectedCategory = categoryfltr.value.toLowerCase().trim();
 
     const filteredProducts = productsData.filter(product => {
       const isInSearch = 
@@ -72,11 +72,11 @@ document.addEventListener("DOMContentLoaded", () => {
           const option = document.createElement('option');
           option.value = category.toLowerCase();
           option.textContent = category;
-          categoryFilter.appendChild(option);
+          categoryfltr.appendChild(option);
         });
 
-        searchInput.addEventListener('input', renderProducts);
-        categoryFilter.addEventListener('change', renderProducts);
+        search.addEventListener('input', renderProducts);
+        categoryfltr.addEventListener('change', renderProducts);
       } else {
         console.error('Data is not in the expected format:', data);
         productList.innerHTML = '<p>Unexpected data format. Please try again later.</p>';
