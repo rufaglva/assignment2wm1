@@ -38,8 +38,7 @@ Ensure a responsive design for a seamless user experience across devices.
 **Setup**
 
 Clone the repository:
-bash
-Copy code
+
 git clone https://github.com/rufaglva/assignment2wm1.git
 cd your-repo
 Open the index.html file in your web browser.
