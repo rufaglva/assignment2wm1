@@ -11,22 +11,22 @@ This web application showcases a list of products with the ability to filter, se
 
 The main HTML file responsible for displaying the product list.
 
-### 'productDetail.html'
+### `productDetail.html`
 The HTML file for displaying detailed information about a specific product.
 
 
-### script.js
+### `script.js`
 The JavaScript file handling the functionality of the product list.
 
-### productDetail.js
+### `productDetail.js`
 The JavaScript file handling the functionality of the product details page.
 
 
-### styles.css
+### `styles.css`
 The CSS file styling the web application.
 
 
-Features
+**Features**
 
 Display a list of products with details such as title, description, category, and price.
 Enable pagination for navigating through product listings.
@@ -34,17 +34,18 @@ Implement search functionality to filter products by keywords.
 Provide category filtering to refine product listings.
 View detailed information about individual products.
 Ensure a responsive design for a seamless user experience across devices.
-Setup
+
+**Setup**
 
 Clone the repository:
 bash
 Copy code
-git clone https://github.com/yourusername/your-repo.git
+git clone https://github.com/rufaglva/assignment2wm1.git
 cd your-repo
 Open the index.html file in your web browser.
 
 
-Usage
+**Usage**
 
 Upon opening the web app, a list of products with basic details will be displayed.
 Utilize the pagination controls to navigate through different product pages.
