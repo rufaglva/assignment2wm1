@@ -1,23 +1,107 @@
-/* Add your CSS styles here */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #1e272e; 
+  color: #ecf0f1; 
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  background-color: #1c4e14; 
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  border-bottom: 4px solid #218c74; 
+}
+
+#searchInput,
+#categoryFilter {
+  margin: 10px;
+  padding: 12px;
+  width: 350px;
+  border: 2px solid #2c3e50;
+  border-radius: 8px;
+  color: #000000; 
+}
+
+#searchInput::placeholder,
+#categoryFilter::placeholder {
+  color: #aaa;
+}
+
+#productList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 20px;
+}
+
+.product-item {
+  background-color: #182d43; /* Darker Grayish Background */
+  border: 1px solid #4b6b8b;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 15px;
+  padding: 20px;
+  width: 300px;
+  border-radius: 15px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.product-item:hover {
+  transform: scale(1.05);
+}
+
+#productDetail {
+  margin: 20px;
+}
+
+#pagination {
+  margin: 20px;
+  text-align: center;
+}
+
+.view-details {
+  background-color: #156252; /* Dark Teal Green */
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  cursor: pointer;
+  border-radius: 25px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.view-details:hover {
+  background-color: #279555; /* Darker Green on Hover */
+}
+
+.product-item img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 15px;
+}
+
+@media (max-width: 600px) {
+  #productList {
+    flex-direction: column;
   }
-  
-  h1 {
+
+  .product-item {
+    width: 100%;
+  }
+
+  #searchInput,
+  #categoryFilter {
+    width: 100%;
+    order: 2; 
+  }
+
+  #productList,
+  #pagination {
+    order: 1; 
+  }
+
+  #productDetail {
+    margin: 20px;
     text-align: center;
   }
-  
-  #productList {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-  }
-  
-  #productList div {
-    border: 1px solid #ccc;
-    padding: 10px;
-    margin-bottom: 10px;
-  }
-  
+}

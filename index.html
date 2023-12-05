@@ -1,17 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>API Integration Example</title>
+    <title>Product List</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-    <div class="container">
-        <h1>Product List</h1>
-        <ul id="productList"></ul>
-        <p class="error-message" id="errorMessage"></p>
+    <h1>Product List</h1>
+
+
+    <input type="text" id="searchInput" placeholder="Search by keyword">
+
+    
+    <select id="categoryFilter">
+        <option value="">All Categories</option>
+       
+    </select>
+
+    <div id="productList">
+        
     </div>
+
+    <div id="productDetail">
+       
+    </div>
+
+
+    <div id="pagination"></div>
+
     <script src="script.js"></script>
 </body>
+
 </html>
